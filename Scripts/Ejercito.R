@@ -8,7 +8,7 @@ names(puntos_de_partida)<-modos_de_juego
 
 ejercito<-function(x){
   
-  x<- as.numeric( readline( prompt = "Las facciones del juego son: Marines espaciales(1), Tau(2), Tiranidos(3) y Necrones(4), coloca el numero de tu faccion: "))           
+  x<- as.numeric( readline( prompt = "Las facciones del juego son: Marines espaciales(1), Tau(2), Tiranidos(3) y Necrones(4), coloca el numero de tu faccion:  "))           
   
   if( x == 1 ){
     puntos<-read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv")
@@ -22,13 +22,18 @@ ejercito<-function(x){
     print( "Estas son las unidades disponibles: ")
     print(paste( puntos[[1]]))
     
+  } else if ( x == 3){
+    puntos<-read.csv("Datos/Puntos de ejercito  - Tiranido.csv")
+    print( "Hambreeeeeeeee")
+    print( "Estas son las unidades disponibles: ")
+    print(paste( puntos[[1]]))
   } else if ( x == 4){
     puntos<-read.csv("Datos/Puntos de ejercito  - Necron.csv")
     print( "¿Por qué dar un nombre a la totalidad?")
     print( "Estas son las unidades disponibles: ")
     print(paste( puntos[[1]]))
   } 
-}
+} 
 
 ejercito(x) 
 
