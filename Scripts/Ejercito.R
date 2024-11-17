@@ -29,5 +29,6 @@ ejercito<-function(x){
     print(paste( puntos[[1]]))
   } 
 }
- 
+
+ejercito(x) 
 
