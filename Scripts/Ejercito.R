@@ -14,12 +14,17 @@ if( elije_faccion == 1 ){
   print( "Estas son las unidades disponibles: ")
   print(paste( puntos[[1]]))
   
-} else if ( elije_faccion == 3){
-  puntos<-read.csv("Datos/Puntos de ejercito  - Tiranido.csv")
-  print( "Has elegido a los deboradores de carne")
+} else if ( elije_faccion == 2 ){
+  puntos<-read.csv("Datos/Puntos de ejercito  - Tau.csv")
+  print( "Has elegido el bien mayor")
   print( "Estas son las unidades disponibles: ")
   print(paste( puntos[[1]]))
-}
-
+  
+} else if ( elije_faccion == 4){
+  puntos<-read.csv("Datos/Puntos de ejercito  - Necron.csv")
+  print( "¿Por qué dar un nombre a la totalidad?")
+  print( "Estas son las unidades disponibles: ")
+  print(paste( puntos[[1]]))
+} 
  
 
