@@ -1,0 +1,31 @@
+Unidad,Numero de miniaturas,Puntos,Tipo
+Apotecario,1,50,Personaje
+Dreagnouth brutalis,1,160,vehiculo
+Capitan,1,80,Personaje
+Capitan gravis,1,80,Personaje
+Capitan exterminador,1,95,Personaje
+Capellan ,1,60,Personaje
+Capellan exterminador,1,75,Personaje
+Bibliotecario,1,65,Personaje
+Bibliotecario exterminador,1,75,Personaje
+Jefe Tigurius ,1,75,Personaje
+Marneus Calgar,3,185,Personaje
+Escuadron de desolacion,5,200,Tropa
+Compañia de heroes,4,95,Tropa
+Escuadron devastador ,10,200,Tropa
+Intercesores de asalto,10,150,Tropa
+Agresores,6,240,Tropa
+Intercesores ,10,160,Tropa
+Infiltradores,10,200,Tropa
+Escuadron infernal,10,160,Tropa
+Exploradores,10,130,Tropa
+Exterminadores de asalto,10,360,Tropa
+Exterminadores ,10,340,Tropa
+Escuadron de eliminacion ,3,80,Tropa
+Impulsor,1,80,Vehiculo
+Incursores,10,160,Tropa
+Gladiator lancer,1,160,Vehiculo
+Predador anikilador ,1,130,Vehiculo
+Razorback,1,95,Vehiculo
+Repulsor ejecutador,1,220,Vehiculo
+Stormhawk interceptor ,1,155,Vehiculo
