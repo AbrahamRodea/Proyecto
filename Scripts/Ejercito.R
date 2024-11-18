@@ -12,27 +12,27 @@
 
 ejercito<-function(x){
   
-  x<- as.numeric( readline( prompt = "Las facciones del juego son: Marines espaciales(1), Tau(2), Tiranidos(3) y Necrones(4), coloca el numero de tu faccion: \n "))           
+  faccion<<- as.numeric( readline( prompt = "Las facciones del juego son: Marines espaciales(1), Tau(2), Tiranidos(3) y Necrones(4), coloca el numero de tu faccion: \n "))           
   
-  if( x == 1 ){
+  if( faccion == 1 ){
     puntos<-read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv")
     print( "Has elegido a los angeles de la muerte del emperador")
     print( "Estas son las unidades disponibles: ")
     print(paste( puntos[[1]]))
     
-  } else if ( x == 2 ){
+  } else if ( faccion == 2 ){
     puntos<-read.csv("Datos/Puntos de ejercito  - Tau.csv")
     print( "Has elegido el bien mayor")
     print( "Estas son las unidades disponibles: ")
     print(paste( puntos[[1]]))
     
-  } else if ( x == 3){
+  } else if ( faccion == 3){
     puntos<-read.csv("Datos/Puntos de ejercito  - Tiranido.csv")
     print( "Hambreeeeeeeee")
     print( "Estas son las unidades disponibles: ")
     print(paste( puntos[[1]]))
     
-  } else if ( x == 4){
+  } else if ( faccion == 4){
     puntos<-read.csv("Datos/Puntos de ejercito  - Necron.csv")
     print( "¿Por qué dar un nombre a la totalidad?")
     print( "Estas son las unidades disponibles: ")
@@ -54,21 +54,21 @@ elije_tipo_de_partida<-function(y){
   
   partidas_disponibles<-names(puntos_de_partida)<-modos_de_juego
   
-  print(paste("Los puntajes de partida disponibles son: ",partidas_disponibles))
+  print(paste("Los puntajes de partida disponibles son: ",puntos_de_partida))
   
-  elije<-readline("Elige el numero de puntos al que deseas jugar tu partida: ")
+  elije<<-as.numeric(readline("Elige el numero de puntos al que deseas jugar tu partida: ")) ### Colocar "<<-" para que la función asigne un valo al objeto a nivel global
   
-  if ( elije != "patrulla" & elije != "escaramuza" & elije != "estandar"){
+  if ( elije != 500 & elije != 1000 & elije != 2000){
     print("Has seleccionado un puntaje no disponible")
     
-  } else if ( elije == "patrulla"){
-    print(paste("Necesitas: ", puntos_de_partida[[1]],"puntos"))
+  } else if ( elije == 500){
+    print(paste("Has elgido el modo de juego de: ", modos_de_juego[[1]]))
     
   } else if ( elije == 1000){
-    print(paste("Necesitas: ", puntos_de_partida[[2]],"puntos"))
+    print(paste("Has elgido el modo de juego de: ", modos_de_juego[[2]]))
     
   } else if ( elije == 2000){
-    print(paste("Necesitas: ", puntos_de_partida[[3]],"puntos"))
+    print(paste("Has elgido el modo de juego de: ", modos_de_juego[[3]]))
   }
 }
 elije_tipo_de_partida()
@@ -92,5 +92,5 @@ suma_de_puntos<- while ( suma <= elije) {
   }
 }
 
-
-
+elije
+class(elije)
