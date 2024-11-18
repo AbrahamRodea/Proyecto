@@ -75,22 +75,24 @@ elije_tipo_de_partida()
 
 ### Forma tu lista de ejercito ###
 
-elije<-as.numeric(readline("¿A cuantos puntos vas a jugar?: "))
 
-datos1<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv"))
-datos1
-suma<-0
-
+crea_tu_lista_de_ejercito<-function(p){
+  
+datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv"))
+print(datos1)
+suma<<-0
 w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
-suma_de_puntos<- while ( suma <= elije) {
+suma_de_puntos<- while ( suma <= elije & suma < elije + 60) {
   points<-as.numeric(datos1[[3]][[w]])
   suma<-suma + points
   print(suma)
   
   if (suma < elije){
     w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
-  }
+  
+  } else if ( suma > elije + 60){
+    print("Has sobrepasado el numero de puntos permitido en este modo de juego, no puedes usar esta lista")
 }
-
-elije
-class(elije)
+}
+  }
+crea_tu_lista_de_ejercito()
