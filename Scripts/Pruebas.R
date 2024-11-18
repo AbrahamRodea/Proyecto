@@ -13,3 +13,6 @@ suma_de_puntos<- while ( suma <= elije) {
     w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
   }
 }
+
+elije<-as.numeric(readline("Elige el numero de puntos al que deseas jugar tu partida: "))
+
