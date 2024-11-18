@@ -133,6 +133,20 @@ crea_tu_lista_de_ejercito<-function(p){
     
     listadeunidades<<-unidades
     
+    lista_de_unidades1<-data.frame(
+      
+      list(datos1[listadeunidades,1]),
+      
+      list(datos1[listadeunidades,2]),
+      
+      list(datos1[listadeunidades,3]),
+      
+      list(datos1[listadeunidades,4]),
+      
+    )
+    
+    View(lista_de_unidades1)
+    
     if (suma < elije){
       
       w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
@@ -147,21 +161,40 @@ crea_tu_lista_de_ejercito<-function(p){
 crea_tu_lista_de_ejercito() 
 
 ################################################################################################
-suma<<-0
 
-unidades<-c
+####################################################
 
-w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
+pdf("Resultados/Lista2.pdf")
 
-while ( suma <= elije & suma < elije + 60) {
+lista_de_unidades1<-data.frame(
   
-  points<-as.numeric(datos1[[3]][[w]])
+  list(datos1[listadeunidades,1]),
   
-  suma<-suma + points
+  list(datos1[listadeunidades,2]),
   
-  print(paste("Tu numero de puntos es: ", suma))
+  list(datos1[listadeunidades,3]),
   
-  unidades<-c(unidades,suma)
-}
+  list(datos1[listadeunidades,4])
   
-length(unidades)
+)
+
+View(lista_de_unidades1)
+
+##################################################
+
+datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Tiranido.csv"))
+datos1
+View(datos1)
+
+
+lista_de_unidades1<-data.frame(
+  
+  list(datos1[listadeunidades,1]),
+  
+  list(datos1[listadeunidades,2]),
+  
+  list(datos1[listadeunidades,3]),
+  
+  list(datos1[listadeunidades,4]),
+  
+)
