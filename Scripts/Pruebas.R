@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 ejercito<-function(x){
   
@@ -198,3 +199,5 @@ lista_de_unidades1<-data.frame(
   list(datos1[listadeunidades,4]),
   
 )
+=======
+>>>>>>> Stashed changes
