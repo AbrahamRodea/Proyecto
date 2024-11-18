@@ -12,14 +12,14 @@ ejercito<-function(x){
   faccion<<- as.numeric( readline( prompt = "Las facciones del juego son: Marines espaciales(1), Tau(2), Tiranidos(3) y Necrones(4), coloca el numero de tu faccion: \n "))           
   
   if( faccion == 1 ){
-   
-     puntos<-read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv")
     
-     print( "Has elegido a los angeles de la muerte del emperador")
+    puntos<-read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv")
     
-     print( "Estas son las unidades disponibles: ")
-   
-      print(paste( puntos[[1]]))
+    print( "Has elegido a los angeles de la muerte del emperador")
+    
+    print( "Estas son las unidades disponibles: ")
+    
+    print(paste( puntos[[1]]))
     
   } else if ( faccion == 2 ){
     
@@ -84,8 +84,8 @@ elije_tipo_de_partida<-function(y){
     print(paste("Has elgido el modo de juego de: ", modos_de_juego[[2]]))
     
   } else if ( elije == 2000){
-   
-     print(paste("Has elgido el modo de juego de: ", modos_de_juego[[3]]))
+    
+    print(paste("Has elgido el modo de juego de: ", modos_de_juego[[3]]))
   }
 }
 
@@ -141,6 +141,21 @@ crea_tu_lista_de_ejercito<-function(p){
     
     listadeunidades<<-unidades
     
+    lista_de_unidades1<-data.frame(
+      
+      Nombre<-datos1[listadeunidades,1],
+      
+      Numero_de_miniaturas<-datos1[listadeunidades,2],
+      
+      Puntos<-datos1[listadeunidades,3],
+      
+      Tipo<-datos1[listadeunidades,4]
+      
+    )
+    
+    View(lista_de_unidades1)
+    
+    
     if (suma < elije){
       
       w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
@@ -153,5 +168,30 @@ crea_tu_lista_de_ejercito<-function(p){
 }
 
 crea_tu_lista_de_ejercito() 
+
+#################################Visualiza tu lista de ejercito###############################################################
+
+visualiza_lista_de_ejercito<-function(j){
+  
+  lista_de_unidades1<-data.frame(
+    
+    Nombre<-datos1[listadeunidades,1],
+    
+    Numero_de_miniaturas<-datos1[listadeunidades,2],
+    
+    Puntos<-datos1[listadeunidades,3],
+    
+    Tipo<-datos1[listadeunidades,4]
+    
+  )
+  
+  View(lista_de_unidades1)
+}
+
+visualiza_lista_de_ejercito()
+
+
+
+
 
 
