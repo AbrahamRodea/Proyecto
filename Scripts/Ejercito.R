@@ -1,14 +1,4 @@
-####### Importante
-
-#### Función while
-#### Imprimir lista en PDF
-#### Markdown
-
-
-
-
-
-##### Elije una faccion #####
+####################################### Elije una faccion ####################################
 
 ejercito<-function(x){
   
@@ -43,7 +33,7 @@ ejercito<-function(x){
 ejercito() #Para ejecutar La función no es necesario colocar ningun valor
 
 
-### Elegir el tipo de partida ###
+#####################################Elegir el tipo de partida ##########################################################################
 
 
 elije_tipo_de_partida<-function(y){ 
@@ -73,26 +63,39 @@ elije_tipo_de_partida<-function(y){
 }
 elije_tipo_de_partida()
 
-### Forma tu lista de ejercito ###
+############################################### Forma tu lista de ejercito #######################################################################################################
 
 
 crea_tu_lista_de_ejercito<-function(p){
   
-datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv"))
-print(datos1)
-suma<<-0
-w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
-suma_de_puntos<- while ( suma <= elije & suma < elije + 60) {
-  points<-as.numeric(datos1[[3]][[w]])
-  suma<-suma + points
-  print(suma)
-  
-  if (suma < elije){
-    w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
-  
-  } else if ( suma > elije + 60){
-    print("Has sobrepasado el numero de puntos permitido en este modo de juego, no puedes usar esta lista")
-}
-}
+  if( faccion == 1){
+    datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv"))
+    
+    
+  } else if (faccion == 2 ){
+    datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Tau.csv"))
+    
+    
+  }else if (faccion == 3 ){
+    datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Tiranido.csv"))
+    
+  } else if (faccion == 4 ){
+    datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Necron.csv"))
   }
+  print(datos1)
+  suma<<-0
+  w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
+  suma_de_puntos<- while ( suma <= elije & suma < elije + 60) {
+    points<-as.numeric(datos1[[3]][[w]])
+    suma<-suma + points
+    print(suma)
+    
+    if (suma < elije){
+      w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
+      
+    } else if ( suma > elije + 60){
+      print("Has sobrepasado el numero de puntos permitido en este modo de juego, no puedes usar esta lista")
+    }
+  }
+}
 crea_tu_lista_de_ejercito()
