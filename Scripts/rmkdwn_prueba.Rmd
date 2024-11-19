@@ -122,7 +122,28 @@ crea_tu_lista_de_ejercito<-function(p){
 }
 crea_tu_lista_de_ejercito()
 
-``
+```
+
+Imprime tu lista
+```
+visualiza_lista_de_ejercito<-function(j){
+  
+  lista_de_unidades1<-data.frame(
+    
+    Nombre<-datos1[listadeunidades,1],
+    
+    Numero_de_miniaturas<-datos1[listadeunidades,2],
+    
+    Puntos<-datos1[listadeunidades,3],
+    
+    Tipo<-datos1[listadeunidades,4]
+    
+  )
+  
+  View(lista_de_unidades1)
+}
+```
+
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r cars}

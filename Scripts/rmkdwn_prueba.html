@@ -462,13 +462,29 @@ crea_tu_lista_de_ejercito&lt;-function(p){
   }
 }
 crea_tu_lista_de_ejercito()
-
-``
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-
-``` r
-summary(cars)</code></pre>
+</code></pre>
+<p>Imprime tu lista</p>
+<pre><code>visualiza_lista_de_ejercito&lt;-function(j){
+  
+  lista_de_unidades1&lt;-data.frame(
+    
+    Nombre&lt;-datos1[listadeunidades,1],
+    
+    Numero_de_miniaturas&lt;-datos1[listadeunidades,2],
+    
+    Puntos&lt;-datos1[listadeunidades,3],
+    
+    Tipo&lt;-datos1[listadeunidades,4]
+    
+  )
+  
+  View(lista_de_unidades1)
+}</code></pre>
+<p>When you click the <strong>Knit</strong> button a document will be
+generated that includes both content as well as the output of any
+embedded R code chunks within the document. You can embed an R code
+chunk like this:</p>
+<pre class="r"><code>summary(cars)</code></pre>
 <pre><code>##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
 ##  1st Qu.:12.0   1st Qu.: 26.00  
