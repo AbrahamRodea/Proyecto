@@ -201,3 +201,215 @@ lista_de_unidades1<-data.frame(
 )
 =======
 >>>>>>> Stashed changes
+
+######################################################################################
+
+####### Lista aleatoria ####################
+
+if( faccion == 1){
+  
+  datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv"))
+  
+  
+} else if (faccion == 2 ){
+  
+  datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Tau.csv"))
+  
+  
+}else if (faccion == 3 ){
+  
+  datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Tiranido.csv"))
+  
+} else if (faccion == 4 ){
+  
+  datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Necron.csv"))
+}
+
+print(datos1)
+suma<-0
+
+for ( i in 1:length(datos1[,3]))
+  suma<- suma + datos1[i,3]
+  
+
+length(datos1[,3])
+ 
+suma<-0
+
+contador<-0
+
+unidades<-c()
+
+w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
+
+while ( ciclo <= elije + 60){
+
+ciclo<-for ( i in 1:1:length(datos1[,3])) {
+  
+  points<-as.numeric(datos1[[3]][[i]])
+  
+  suma<- contador + points
+  
+  contador<- suma
+}
+}
+
+#####################
+suma<-0
+
+contador<-0
+
+points<-0
+
+unidades<-c()
+
+for ( i in 1:length(datos1[,3])) {
+  
+  while(suma <= elije & suma < elije + 60){
+  
+  points<-as.numeric(datos1[i,3])
+  
+  suma<<- contador + points
+  
+  contador<- suma
+  
+  
+  }
+  print(paste("Tu suma es: ",suma))
+}
+
+
+
+
+aleatorio()
+
+###########################
+
+crea_tu_lista_de_ejercito_aleatoria<-function(p){
+  
+  if( faccion == 1){
+    
+    datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Marines espaciales.csv"))
+    
+    
+  } else if (faccion == 2 ){
+    
+    datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Tau.csv"))
+    
+    
+  }else if (faccion == 3 ){
+    
+    datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Tiranido.csv"))
+    
+  } else if (faccion == 4 ){
+    
+    datos1<<-as.data.frame(read.csv("Datos/Puntos de ejercito  - Necron.csv"))
+  }
+  
+  print(datos1)
+  
+  suma<-0
+  
+  contador<-0
+  
+  points<-0
+  
+  unidades<-c()
+  
+ for ( i in 1:length(datos1[,3])) {
+    
+    while(suma <= elije & suma < elije + 60){
+      
+      points<-as.numeric(datos1[i,3])
+      
+      suma<<- contador + points
+      
+      contador<- suma
+      
+    }
+    print(paste("Tu suma es: ",suma))
+  
+    print(paste("Tu numero de puntos es: ", suma))
+    
+    unidades<-c(unidades,i) ###########################
+    
+    print(paste("Tu lista tiene: ",length(unidades),"unidades"))
+    
+    listadeunidades<<-unidades
+    
+    lista_de_unidades1<-data.frame(
+      
+      Nombre<-datos1[listadeunidades,1],
+      
+      Numero_de_miniaturas<-datos1[listadeunidades,2],
+      
+      Puntos<-datos1[listadeunidades,3],
+      
+      Tipo<-datos1[listadeunidades,4]
+      
+    )
+    
+    View(lista_de_unidades1)
+    
+    
+    if (suma < elije){
+      
+      w<-as.numeric(readline("Coloca el numero de la unidad que deseas agregar a tu lista: "))
+      
+    } else if ( suma > elije + 60){
+      
+      print("Has sobrepasado el numero de puntos permitido en este modo de juego, no puedes usar esta lista")
+    }
+  }
+}
+
+crea_tu_lista_de_ejercito_aleatoria()
+
+################################################################
+
+
+suma<-0
+
+contador<-0
+
+points<-0
+
+unidades<-c()
+    
+suma<-0
+
+contador<-0
+
+unidades<-c()
+
+while( suma <= elije & suma < elije + 60) {
+  
+  
+  points<-as.numeric(datos1[[sample:1:(datos1[,3])]][[3]])
+  
+  suma<- contador + points
+  
+  contador<- suma
+  
+  print(paste("Tu numero de puntos es: ", suma))
+  
+  unidades<-c(unidades,w) ###########################
+  
+  print(paste("Tu lista tiene: ",length(unidades),"unidades"))
+  
+  listadeunidades<<-unidades
+  
+  lista_de_unidades1<-data.frame(
+    
+    Nombre<-datos1[listadeunidades,1],
+    
+    Numero_de_miniaturas<-datos1[listadeunidades,2],
+    
+    Puntos<-datos1[listadeunidades,3],
+    
+    Tipo<-datos1[listadeunidades,4]
+    
+  )
+  
+  View(lista_de_unidades1)
+}
