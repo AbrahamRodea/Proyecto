@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ## R Markdown
 
 Facción
+
+<img src="https://frontlinegaming.org/wp-content/uploads/2023/09/Tyranids-Vs-Astra-Militarum.jpg" alt="JuveR" width="300px">
 ```
 ####################################### Elije una faccion ####################################
 
