@@ -1,6 +1,6 @@
 ################################################################################################################################
 
-#Esta es la version del script con comentarios, si deseas visualizar el codigonsin comentarios ve al scipt "Codigo final" que encontraras en la carpeta "scripts de este proyecto
+#Esta es la version del script con comentarios, si deseas visualizar el codigon sin comentarios ve al scipt "Codigo final" que encontraras en la carpeta "scripts de este proyecto
 
 ####################################### Elije una faccion ####################################
 
