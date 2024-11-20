@@ -11,6 +11,17 @@ knitr::opts_chunk$set(echo = TRUE)
 ## R Markdown
 
 Facción
+
+<img src="https://cdnb.artstation.com/p/assets/images/images/023/594/445/large/paul-dainton-pd-40k-codex-spacemarines-cover.jpg?1579713116" alt= "JuveR" width="300px">
+
+<img src="https://warhammerart.com/wp-content/uploads/2015/10/tau-codex.jpg" alt="JuveR" width="300px">
+
+
+<img src="https://frontlinegaming.org/wp-content/uploads/2023/09/Tyranids-Vs-Astra-Militarum.jpg" alt="JuveR" width="300px">
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIdwbmuobzVV_8pE84eelBMUEhKixhWilAe4dML-QhrLx-9ruZaFHUry1VBPNBCrt8lCZQ3UfVmjUu1O8I5cCZMF9d0wvvCAABB1bYmU9BMXLPnS-NxkfmU56bZUMzbiN0au6aG-bz3Y8/s1233/necron8.jpg" alt="JuveR" width="300px">
+
+
 ```
 ####################################### Elije una faccion ####################################
 
@@ -122,7 +133,28 @@ crea_tu_lista_de_ejercito<-function(p){
 }
 crea_tu_lista_de_ejercito()
 
-``
+```
+
+Imprime tu lista
+```
+visualiza_lista_de_ejercito<-function(j){
+  
+  lista_de_unidades1<-data.frame(
+    
+    Nombre<-datos1[listadeunidades,1],
+    
+    Numero_de_miniaturas<-datos1[listadeunidades,2],
+    
+    Puntos<-datos1[listadeunidades,3],
+    
+    Tipo<-datos1[listadeunidades,4]
+    
+  )
+  
+  View(lista_de_unidades1)
+}
+```
+
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r cars}
