@@ -15,21 +15,31 @@ knitr::opts_chunk$set(echo = TRUE)
 Yet even in his deathless state, the Emperor continues his eternal vigilance. Mighty battlefleets cross the daemon-infested miasma of the Warp, the only route between distant stars, their way lit by the Astronomican, the psychic manifestation of the Emperor's will. Vast armies give battle in his name on uncounted worlds. Greatest amongst his soldiers are the Adeptus Astartes, the Space Marines, bio-engineered super-warriors. Their comrades in arms are legion: the Imperial Guard and countless planetary defence forces, the ever vigilant Inquisition and the tech-priests of the Adeptus Mechanicus to name only a few. But for all their multitudes, they are barely enough to hold off the ever-present threat from aliens, heretics, mutants - and worse. 
 
 
-Facción
+### Facciones
+## Marines Espaciales
 
 <img src="https://cdnb.artstation.com/p/assets/images/images/023/594/445/large/paul-dainton-pd-40k-codex-spacemarines-cover.jpg?1579713116" alt= "JuveR" width="300px">
 
 
 Ellos seran los mas finos guerreros del emperador, los que se entreguen a Él seran moldeados cual arcilla que ha sido forjada con el calor de la batalla. Seran mi baluarte ante el terror. Son los defensores de la humanidad. Ellos son Marines espaciales al servicio de Él en Terra y no conoceran el miedo
 
+## Imperio Tau
+
 <img src="https://warhammerart.com/wp-content/uploads/2015/10/tau-codex.jpg" alt="JuveR" width="300px">
-Tau ´va, por el bien mayor 
+
+Los seguidores de la T´au ´va, una joven raza en plena expansion con la ideologia de un bien mayor sobre el de uno mismo. Su inteligencia incrementa a pasos agigantados a la par de predicar la union de la vida en un universo que solo existe la destrucción
+
+## Horda Tiranida
 
 <img src="https://frontlinegaming.org/wp-content/uploads/2023/09/Tyranids-Vs-Astra-Militarum.jpg" alt="JuveR" width="300px">
-El enjambre que rodea la galaxia conocida 
+
+El enjambre que rodea la galaxia conocida, el organismo biologico perfeccionado en la oscuridad del universo desconocido posiciona sus Zarcillos alreddor de la vida como la conociamos. No conoce el odio o el rencor, para la mente enjambre la batalla entre presa y cazador es su proposito y su necesidad, solo conoce el hambre. 
+
+## Necron Tyr
 
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIdwbmuobzVV_8pE84eelBMUEhKixhWilAe4dML-QhrLx-9ruZaFHUry1VBPNBCrt8lCZQ3UfVmjUu1O8I5cCZMF9d0wvvCAABB1bYmU9BMXLPnS-NxkfmU56bZUMzbiN0au6aG-bz3Y8/s1233/necron8.jpg" alt="JuveR" width="300px">
-Los verdaderos amos del universo material, mientras el ancestro de la humanidad salia de un charco primigenio, ellos ya dominaban la galaxia 
+
+Los verdaderos amos del universo material, mientras el ancestro de la humanidad salia de un charco primigenio, ellos ya dominaban la galaxia, son el ejercito que trascendio la carne, conquisto el universo y sin mas motivacion el Rey Silente puso en estasis a su pueblo y se exilio mas alla de lo fisicamente conocido. Dinastias necronas despiertan por diseño o por error para encontrar nuevamente un universo que ha olvidado su lugar.
 
 
 ```
