@@ -237,7 +237,6 @@ crear_lista_de_ejercito_automatico<-function(p){
   while (suma <= elije) { 
     
     points<-as.numeric(datos1[[3]][[w]]) 
-    
     suma<- suma + points 
     
     unidades<-c(unidades,w)
@@ -263,7 +262,7 @@ crear_lista_de_ejercito_automatico<-function(p){
     if (length(indices_disponibles)>0){ 
       
       w <- sample(indices_disponibles, 1) 
-      
+    }
     else {break}
     
   }
@@ -273,4 +272,6 @@ crear_lista_de_ejercito_automatico<-function(p){
   View(lista_de_unidades1)
 }
 
-crear_lista_de_ejercito_automatico() #Para ejecutar La función no es necesario colocar ningun valor
+crear_lista_de_ejercito_automatico()#Para ejecutar La función no es necesario colocar ningun valor
+
+
