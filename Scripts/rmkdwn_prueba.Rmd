@@ -10,9 +10,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 
- It is the 41st Millennium. For more than a hundred centuries The Emperor has sat immobile on the Golden Throne of Earth. He is the Master of Mankind by the will of the gods, and master of a million worlds by the might of his inexhaustible armies. He is a rotting carcass writhing invisibly with power from the Dark Age of Technology. He is the Carrion Lord of the Imperium for whom a thousand souls are sacrificed every day, so that he may never truly die.
+ "It is the 41st Millennium. For more than a hundred centuries The Emperor has sat immobile on the Golden Throne of Earth. He is the Master of Mankind by the will of the gods, and master of a million worlds by the might of his inexhaustible armies. He is a rotting carcass writhing invisibly with power from the Dark Age of Technology. He is the Carrion Lord of the Imperium for whom a thousand souls are sacrificed every day, so that he may never truly die.
 
-Yet even in his deathless state, the Emperor continues his eternal vigilance. Mighty battlefleets cross the daemon-infested miasma of the Warp, the only route between distant stars, their way lit by the Astronomican, the psychic manifestation of the Emperor's will. Vast armies give battle in his name on uncounted worlds. Greatest amongst his soldiers are the Adeptus Astartes, the Space Marines, bio-engineered super-warriors. Their comrades in arms are legion: the Imperial Guard and countless planetary defence forces, the ever vigilant Inquisition and the tech-priests of the Adeptus Mechanicus to name only a few. But for all their multitudes, they are barely enough to hold off the ever-present threat from aliens, heretics, mutants - and worse. 
+Yet even in his deathless state, the Emperor continues his eternal vigilance. Mighty battlefleets cross the daemon-infested miasma of the Warp, the only route between distant stars, their way lit by the Astronomican, the psychic manifestation of the Emperor's will. Vast armies give battle in his name on uncounted worlds. Greatest amongst his soldiers are the Adeptus Astartes, the Space Marines, bio-engineered super-warriors. Their comrades in arms are legion: the Imperial Guard and countless planetary defence forces, the ever vigilant Inquisition and the tech-priests of the Adeptus Mechanicus to name only a few. But for all their multitudes, they are barely enough to hold off the ever-present threat from aliens, heretics, mutants - and worse." 
+
+### ¿Que es Warhammer 40,000?
+
++ Es un juego de mesa de estrategia bélica que representa las unidades militares con miniaturas.
+
++ Existen varias facciones dentro del juego, cada una de ellas cuenta con distintas unidades y distintas maneras de jugarse.
+
++ Cada una de las unidades tiene un valor en puntos, los tipos de partida se suelen definir por puntaje máximo que puede tener la lista de cada jugador.
+
+### ¿Como se juega?
+
+1. Se formulan listas de ejércitos. 
+2. Creas un “paisaje” donde ocurrirá el combate con zonas de combate y zonas de desembarco.
+3. Definir las misiones o el “objetivo” de cada ejército y desplegar la unidades en formación.
+4. Turnos de 5 fases. 
 
 
 ### Facciones
@@ -21,7 +36,7 @@ Yet even in his deathless state, the Emperor continues his eternal vigilance. Mi
 <img src="https://cdnb.artstation.com/p/assets/images/images/023/594/445/large/paul-dainton-pd-40k-codex-spacemarines-cover.jpg?1579713116" alt= "JuveR" width="300px">
 
 
-Ellos seran los mas finos guerreros del emperador, los que se entreguen a Él seran moldeados cual arcilla que ha sido forjada con el calor de la batalla. Seran mi baluarte ante el terror. Son los defensores de la humanidad. Ellos son Marines espaciales al servicio de Él en Terra y no conoceran el miedo
+Ellos seran los mas finos guerreros del Emperador de la humanidad, los que se entreguen a Él seran moldeados cual arcilla que ha sido forjada con el calor de la batalla. Seran el baluarte ante el terror, los defensores de la humanidad. Ellos son Marines espaciales al servicio de Él en Terra y no conoceran el miedo
 
 ## Imperio Tau
 
@@ -41,6 +56,17 @@ El enjambre que rodea la galaxia conocida, el organismo biologico perfeccionado 
 
 Los verdaderos amos del universo material, mientras el ancestro de la humanidad salia de un charco primigenio, ellos ya dominaban la galaxia, son el ejercito que trascendio la carne, conquisto el universo y sin mas motivacion el Rey Silente puso en estasis a su pueblo y se exilio mas alla de lo fisicamente conocido. Dinastias necronas despiertan por diseño o por error para encontrar nuevamente un universo que ha olvidado su lugar.
 
+### Objetivo 
+
++ El objetivo fue crear un grupo de funciones que permita a los usuarios elegir una de las facciones del juego y crear una lista de ejército
+
++ La creación de la lista estará limitada por el puntaje máximo permitido en cada tipo de partida
+
+### Consta de 4 funciones:
++ ejercito
++ elije_tipo_de_partida
++ crea_tu_lista_de_ejercito
++ crear_lista_de_ejercito_automatico
 
 ```
 ####################################### Elije una faccion ####################################
